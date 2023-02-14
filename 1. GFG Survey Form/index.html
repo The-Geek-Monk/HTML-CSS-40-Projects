@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h2>Geeks for Geeks Survey Form:</h2>
+<div class="form-control">
+    <div class="group">
+    <label for="html" class="labelName">Name</label><br />
+    <input type="text" name="name" class="inputBox" placeholder="Enter Your Name"/><br />
+    </div>
+    <div class="group">
+    <label for="html" class="labelName">Email</label><br />
+    <input type="text" name="email" class="inputBox" placeholder="Enter Your Email Id"/><br />
+    </div>
+    <div class="group">
+    <label for="html" class="labelName">Age</label><br />
+    <input type="text" name="age" class="inputBox" placeholder="Enter Your Age"/><br />
+    </div>
+    <div class="group">
+    <label for="html" class="labelName">Which option best describes you</label><br />
+    <select name="profession" id="profession">
+        <option value="rigatoni">Student</option>
+        <option value="dave">Working Professional</option>
+        <option value="pumpernickel">Dropper</option>
+        <option value="reeses">None of Above</option>
+    </select><br />
+    </div>
+    <div class="group">
+    <label for="html" class="labelName">Would you recommend GeeksforGeeks to a friend?</label><br />
+    <div class="radioButton">
+    <input type="radio" name='foo'/><label>Yes</label><br />
+    <input type="radio" name='foo'/><label>No</label><br />
+    <input type="radio" name='foo'/><label>Maybe</label><br />
+</div>    
+</div>
+    <div class="group">
+    <label for="html" class="labelName">Languages and Frameworks known (Check all that apply)</label><br />
+    <div class="checkBox">
+    <input type="checkbox" /><label>C</label><br />
+    <input type="checkbox" /><label>C++</label><br />
+    <input type="checkbox" /><label>JavaScript</label><br />
+    <input type="checkbox" /><label>React</label><br />
+    <input type="checkbox" /><label>Angular</label><br />
+    <input type="checkbox" /><label>Django</label><br />
+</div>
+</div>
+<div class="group">
+    <label for="html" class="labelName">Any comments or suggestions</label><br />
+    <textarea id="w3review" rows="4" cols="50" class="inputArea" placeholder="Enter Suggestions Here..."></textarea><br />
+    </div>
+    <button type="submit">Submit</button>
+</div>
+</body>
+
+</html>
