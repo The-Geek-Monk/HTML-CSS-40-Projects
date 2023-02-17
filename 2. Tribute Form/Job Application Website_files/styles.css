@@ -1,0 +1,28 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter'  
+}
+body{
+    background-color: #a9a9a9;
+}
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+    height: 1061px;
+    background-color: #ffffff;
+    border-radius: 13px;
+}
+.heading{
+    display: block;
+}
+h1{
+    position: relative;
+    font-weight: 600;
+    size: 57px;
+    line-height: 20px;
+    margin-left: 36px;
+    padding-top: 43px;
+}

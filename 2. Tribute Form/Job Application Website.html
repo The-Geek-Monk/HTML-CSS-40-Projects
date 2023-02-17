@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Website</title>
+    
+    
+  <link rel="stylesheet" href="./Job Application Website_files/styles.css"><link href="./Job Application Website_files/css" rel="stylesheet"></head>
+  <body>
+    <div class="container">
+        <div class="heading">
+        <h1>Job Application</h1>
+      <h3>(Web)</h3>
+    </div>
+      <label for="fname">First Name</label>
+      <input type="text" value="">
+      <label for="lname">Last Name</label>
+      <input type="text" value=""><br>
+      <label for="email">Email</label>
+      <input type="email" value="">
+      <label for="job">Job Role</label>
+      <select name="profession" id="profession">
+        <option value="rigatoni">Android Developer</option>
+        <option value="dave">Web Developer</option>
+        <option value="pumpernickel">Data Analyst</option>
+        <option value="reeses">Devops Engineer</option></select><br>
+      <label for="job">Address</label>
+      <textarea id="w3review" name="w3review" rows="4" cols="50"> </textarea><br>
+      <label for="city">City</label>
+      <input type="text" value="">
+      <label for="fname">Pincode</label>
+      <input type="text" value=""><br>
+      <label for="fname">Start Date</label>
+      <input type="date" name="startDate">
+      <label for="fname">Upload Your CV</label>
+      <input type="file" name="fileupload" value="fileupload" id="fileupload"><br>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
